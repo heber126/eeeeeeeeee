@@ -364,7 +364,7 @@ do
     -- // Constructor
     function BoothMessageManager.__init__(self, Data)
         -- // Set default
-        self.DefaultData.Messages = {"very cool", "pls donate", "ibeg", "automated booth"}
+        self.DefaultData.Messages = {"", "", "", ""}
         self:LoadDefaults(Data)
     end
 
