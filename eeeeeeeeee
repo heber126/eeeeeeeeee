@@ -344,20 +344,6 @@ do
     end
 end
 
--- // Chat Message
-local ChatMessageManager = MessageManager:Clone()
-do
-    -- // Constructor
-    function ChatMessageManager.__init__(self, Data)
-        -- // Set default
-        self.DefaultData.Messages = {"Hello", "This is an automated message", "Donate for an automated response!", "How are you today?", "Created by Stefanuk12"}
-        self:LoadDefaults(Data)
-    end
-
-    -- // Set task
-    ChatMessageManager.DoTask = ChatMessageManager.Chat
-end
-
 -- // Booth "Message"
 local BoothMessageManager = MessageManager:Clone()
 do
